@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+mongoose.set('debug', true);
 var Item = mongoose.model('Item');
 
 var sendJSONresponse = function(res, status, content) {

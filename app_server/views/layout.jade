@@ -1,11 +1,11 @@
 doctype html
-html(ng-app='app')
+html(ng-app='AshleyJackson_CIS385ProjectApp')
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
     link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/angular/angular.min.js')
+
   body
     .navbar.navbar-default.navbar-fixed-top
       .container
@@ -19,6 +19,8 @@ html(ng-app='app')
     .container
       block content
 
-    script(src='/angular/main.js')
+    script(src='/angular/angular.min.js')
+    script(src='/angular/AshleyJackson_CIS385ProjectApp.js')
     script(src='/javascripts/jquery-1.11.1.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
+    script(src= 'javascript/validation.js')

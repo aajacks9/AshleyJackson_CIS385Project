@@ -27,10 +27,10 @@ var _showError = function (req, res, status) {
 
 var renderHomepage = function(req, res, responseBody){
   res.render('index', {
-    title: 'Items for bid',
+    title: 'Movie Watchlist',
     pageHeader: {
-      title: 'Bidding',
-      strapline: 'Find items to bid on'
+      title: 'Movies',
+      strapline: 'Find movie to watch'
     }
   });
 };
