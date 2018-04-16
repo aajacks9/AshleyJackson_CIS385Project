@@ -24,3 +24,12 @@ html(ng-app='AshleyJackson_CIS385ProjectApp')
     script(src='/javascripts/jquery-1.11.1.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
     script(src= 'javascript/validation.js')
+
+
+   .col-xs-12.col-sm-8(ng-controller="itemListCtrl")
+     .error {{ message }}
+       .row.list.btn-group.col-xs-12.list-group-items(ng-repeat="location in data.items")
+         h4
+          a(href="/item/{{ item._id }}") {{ item.name }}
+          small {{ item.rating }}
+          span.badge.pull-right.badge-default {{ item.genre }}

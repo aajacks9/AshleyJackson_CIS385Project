@@ -5,7 +5,7 @@ var itemListCtrl = function ($scope) {
         items: [{
             name: 'Nemo',
             rating: 3,
-            genre: 'Childrens'
+            genre: 'Children'
             _id:'5370a35f2536f6785f8dfb6a'
         },{
             name: 'Space Jam',
@@ -30,4 +30,4 @@ var itemListCtrl = function ($scope) {
 
 angular
     .module('AshleyJackson_CIS385ProjectApp')
-    .controller('itemsListCtrl',itemsListCtrl);
+    .controller('itemsListCtrl',itemsListCtrl)
